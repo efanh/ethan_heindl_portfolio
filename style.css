@@ -12,7 +12,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6, span {
-    color: #242424;
+    color: #ccd6f6;
     text-align: center;
     line-height: 1.25;
 }
@@ -24,6 +24,7 @@ h1 {
 p {
     line-height: 1.5;
     font-size: 16px;
+    color: #ccd6f6;
 }
 
 a {
@@ -51,11 +52,11 @@ i {
 }
 
 .link_hover-effect--white:after {
-    background-color: #fff;
+    background-color: #22c45d;
 }
 
 .link_hover-effect--black:after {
-    background-color: #000;
+    background-color: #22c45d;
 }
 
 .link_hover-effect:hover:after {
@@ -65,6 +66,7 @@ i {
 
 li {
     list-style-type: none;
+    color: #ccd6f6;
 }
 
 .flex {
@@ -73,6 +75,7 @@ li {
 
 .flex-1 {
     flex: 1;
+    background-color: #0a192f;
 }
 
 .flex-2 {
@@ -90,12 +93,12 @@ li {
     padding: 0 12px;
 }
 
-.text--blue {
-    color: #008cff;
+.text--green {
+    color: #22c45d;
 }
 
 section:nth-child(even) {
-    background-color: #f8f8f8;
+    background-color: #071529;
 }
 
 .section_title {
@@ -105,14 +108,19 @@ section:nth-child(even) {
 /* NAV BAR */
 
 nav {
-    height: 100px;
+    height: 80px;
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 12px;
+
+    background-color: #071529;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .nav_link--list {
@@ -121,26 +129,27 @@ nav {
 
 .nav_link--anchor {
     margin: 0 12px;
-    color: #242424;
+    color: #ccd6f6;
     font-weight: 700;
 }
 
 .nav_link--anchor-primary {
-    background-color: #008cff;
+    background-color: #22c45d;
     padding: 8px 20px;
     border-radius: 50px;
-    color: white;
+    color: #242424;
     transition: all 300ms ease;
 }
 
 .nav_link--anchor-primary:hover {
-    background-color: #32a2fe;
+    background-color: #109440;
 }
 
 .personal_logo {
     font-size: 24px;
-    color: #008cff;
+    color: #22c45d;
     margin: 0 12px;
+    padding-left: 12px;
     font-weight: bold;
 }
 
@@ -150,12 +159,13 @@ nav {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    margin-top: 80px;
 }
 
 .about-me_info {
     display: flex;
     flex-direction: column;
-
 }
 
 .about-me_info--container {
@@ -174,6 +184,7 @@ nav {
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
     margin-bottom: 28px;
+    margin-top: 28px;
     animation: animate-profile-picture 800ms 200ms backwards;
 }
 
@@ -198,6 +209,7 @@ nav {
 .about-me_info--title {
     margin-bottom: 16px;
     animation: fade-up 650ms 400ms backwards;
+    color: #ccd6f6;
 }
 
 .about-me_info--para {
@@ -208,7 +220,7 @@ nav {
 
 .about-me_link {
     font-size: 20px;
-    color: #242424;
+    color: #22c45d;
     padding: 0 16px;
 
     position: relative;
@@ -326,6 +338,7 @@ nav {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #0a192f;
 }
 
 .my-history_info {
@@ -360,7 +373,7 @@ nav {
 /* FOOTER */
 
 footer {
-    background-color: #242424;
+    background-color: #071529;
 }
 
 .footer_social--list {
@@ -377,6 +390,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    max-height: 250px;
 }
 
 .footer_logo--img {
@@ -385,7 +400,7 @@ footer {
 }
 
 .footer_social--link, .footer_ethan, .footer_logo--popper {
-    color: #fff;
+    color: #ccd6f6;
 }
 
 .footer_logo--popper {
